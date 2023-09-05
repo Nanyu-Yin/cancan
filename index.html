@@ -14,6 +14,22 @@
             });
         });
     </script>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        img.one {
+            height: 90%;
+            width: 90%;
+        }
+
+        img.two {
+            height: 50%;
+            width: 50%;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,7 +42,7 @@
                 audio.play();
             }
         </script>
-        <img id="div2" src="nainiumao.png" style="display:none" onclick="playAudio()">
+        <img id="div2" class="two" src="nainiumao.png" style="display:none" onclick="playAudio()">
         <button onclick="playAudio()">找到奶牛猫</button>
     </main>
 </body>
