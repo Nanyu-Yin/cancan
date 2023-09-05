@@ -6,15 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>灿灿的爆鸣</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#div2").toggle();
+            });
+        });
+    </script>
 </head>
 
 <body>
     <main>
         <h1>Welcome to 奶牛猫的网页</h1>
         <p>小手一张，鸟语花香</p>
-        <a onclick="document.getElementById('scream.mp3').play();">
-            <img src="nainiumao.png">
-        </a>
+        <script>
+            function playAudio() {
+                var audio = new Audio("cancanscream.mp3");
+                audio.play();
+            }
+        </script>
+        <img id="div2" src="nainiumao.png" style="display:none" onclick="playAudio()">
+        <button onclick="playAudio()">找到奶牛猫</button>
     </main>
 </body>
 
